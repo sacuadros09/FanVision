@@ -1,26 +1,26 @@
-export enum Attr {
-    "profilephoto" = "profilephoto",
-    "subnames" = "subnames" ,
-    "names" = "names",
+export enum Attribu {
+    "profilefoto" = "profilefoto",
+    "subname" = "subname" ,
+    "named" = "named",
 }
 
-class CardProfile extends HTMLElement {
+class CardFriends extends HTMLElement {
     
-    profilephoto?: string;
-    subnames?: string;
-    names?: string;
+    profilefoto?: string;
+    subname?: string;
+    named?: string;
     
     static get observedAttributes(){
-        const attrs: Record<Attr, null> = {
-            profilephoto: null,
-            subnames: null,
-            names: null,
+        const attrs: Record<Attribu, null> = {
+            profilefoto: null,
+            subname: null,
+            named: null,
         }
         return Object.keys(attrs);
     }
     
     attributeChangedCallback(
-        propName: Attr,
+        propName: Attribu,
         _: string | undefined,
         newValue: string | undefined
         ) {
@@ -45,12 +45,12 @@ class CardProfile extends HTMLElement {
         render(){
             if(this.shadowRoot){
                 this.shadowRoot.innerHTML = `
-                <link rel="stylesheet" href="../src/components/CardProfile/CardProfile.css">
+                <link rel="stylesheet" href="../src/components/CardFriends/CardFriends.css">
                 <section class = "All">
-                <img src=${this.profilephoto}></img>
+                <img src=${this.profilefoto}></img>
                 <section class = "text">
-                <h1>${this.subnames}</h1>
-                <h3>${this.names}</h3>
+                <h1>${this.subname}</h1>
+                <h3>${this.named}</h3>
                 </section>
                 </section>
                 `
@@ -58,5 +58,5 @@ class CardProfile extends HTMLElement {
         }
     }
     
-customElements.define("my-cardprofile",CardProfile);
-export default CardProfile  ;
+customElements.define("my-cardfriends",CardFriends);
+export default CardFriends ;

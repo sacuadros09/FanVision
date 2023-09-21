@@ -60,14 +60,16 @@ class CardUploade extends HTMLElement {
             if(this.shadowRoot){
                 this.shadowRoot.innerHTML = `
                 <link rel="stylesheet" href="../src/components/CardUploade/CardUploade.css">
-                <section>
-                <img src=${this.profile}></img>
+                <section  class = "card" >
+                <img class = "phoper" src=${this.profile}></img>
                 <h1>${this.named}</h1>
-                <h2>${this.subname}</h2>
+                <h3>${this.subname}</h3>
                 <p>${this.description}</p>
-                <img src=${this.images}></img>
-                <img src=${this.likes}></img>
-                <p>${this.number}</p>
+                <img class = "imgpost" src=${this.images}></img>
+                <section class = "downpart">
+                <img class = "imglike" src=${this.likes}></img>
+                <p class = "numlike" >${this.number}</p>
+                </section>
                 
                 </section>
                 `

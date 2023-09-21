@@ -1,3 +1,62 @@
-section{
-    background: lightblue;
+
+
+.card{
+    background-color: white;
+    margin-top: 10%;
+    margin-right: 20%;
+    border-radius: 4%;
+    align-items: center;
+}
+
+.phoper {
+    width: 12%;
+    height: 12%;
+    margin-left: 13%;
+    margin-top: 5%;
+}
+
+h1{
+    margin-top: -12%;
+    margin-left: 29%;
+    font-size: larger;
+}
+
+h3{
+    margin-top: -2%;
+    margin-left: 28%;
+    color: gray;
+}
+
+p{
+    width: 70%;
+    margin-left: 13.5%;
+    margin-top: 6%;
+
+}
+
+.imgpost{
+
+    margin-left: 13.5%;
+    width: 70%;
+    height: 70%;
+}
+
+.imglike{
+    width: 7%;
+    height: 7%;
+    margin-left: 38%;
+    
+}
+
+.numlike{
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+.downpart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    
 }
