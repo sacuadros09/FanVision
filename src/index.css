@@ -7,11 +7,18 @@
 
 .leftside{
     width: 30%;
-    
+    border-color: white;
+    border-right-width: 5px;
+    border-right-style: solid;
 }
+
+
 
 .midside{
     width: 45%;
+    border-color: white;
+    border-right-width: 5px;
+    border-right-style: solid;
 }
 
 .containerRight{
@@ -24,6 +31,39 @@ img{
     margin-top: 5%;
     margin-left: 9%;
     width: 35%;
+
+}
+
+@media (max-width: 400px) {
+  .all {
+    background: linear-gradient(rgb(5, 28, 48, 100%), rgb(0, 48, 102, 100%));
+    display: flex;
+    flex-direction: column; /* Cambiamos a una disposición vertical */
+    align-items: center; /* Centramos todo verticalmente en dispositivos móviles */
+  }
+  
+  .leftside, .midside {
+    width: 100%; /* Ocupa todo el ancho disponible en dispositivos móviles */
+    border: none; /* Eliminamos el borde en dispositivos móviles */
+  }
+  
+  button {
+    margin-top: auto; /* Mueve el botón hacia la parte inferior */
+    margin-left: auto; /* Centramos horizontalmente el botón en dispositivos móviles */
+    margin-right: auto; /* Centramos horizontalmente el botón en dispositivos móviles */
+    margin-bottom: 5%; /* Espaciado inferior más pequeño en dispositivos móviles */
+    font-size: 10px;
+  }
+  
+  h2 {
+    display: none;/* Espaciado superior más pequeño en dispositivos móviles */
+  
+    }
+  
+  img{
+    display: none;
+  }
+
 
 }
 
@@ -97,5 +137,11 @@ button {
  h2{
   color: white;
   margin-left: 25%;
-  margin-top: 30%;
+  margin-top: 20%;
+  font-family: "Helvetica", Arial, sans-serif;
+ }
+
+ .sectionfriends{
+  font-family: "Helvetica", Arial, sans-serif;
+  margin-top: -15%;
  }

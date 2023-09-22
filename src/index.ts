@@ -120,6 +120,7 @@ class AppContainer extends HTMLElement{
 
 
             const sectionfriends=document.createElement("section")  
+            sectionfriends.className = "sectionfriends"
             this.cardfriends.forEach((cardfriends) => {
                 sectionfriends.appendChild(cardfriends);
             })

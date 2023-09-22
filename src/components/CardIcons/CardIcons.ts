@@ -47,7 +47,7 @@ class CardIcons extends HTMLElement {
             if(this.shadowRoot){
                 this.shadowRoot.innerHTML = `
                 <link rel="stylesheet" href="../src/components/CardIcons/CardIcons.css">
-                <section>
+                <section class = "leftside">
                 <img class = "secondimg" src=${this.img}></img>
                 <h1 class = "notifi">${this.name}</h1>  
                 </section>
