@@ -57,11 +57,13 @@ img{
   
   h2 {
     display: none;/* Espaciado superior más pequeño en dispositivos móviles */
-  
+
     }
   
   img{
-    display: none;
+    width: 30px;
+    margin-left: 230px;
+    margin-top: 20px;
   }
 
 
